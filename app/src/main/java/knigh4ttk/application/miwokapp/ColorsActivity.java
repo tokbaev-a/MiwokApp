@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 
 public class ColorsActivity extends AppCompatActivity {
-    WordAdaptor itemsAdapter;
+    WordAdapter itemsAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class ColorsActivity extends AppCompatActivity {
 
         wordsList = populateData(wordsList);
 
-        itemsAdapter = new WordAdaptor(this, wordsList);
+        itemsAdapter = new WordAdapter(this, wordsList);
         ListView listView = (ListView) findViewById(R.id.rootViewColors);
 
         listView.setAdapter(itemsAdapter);

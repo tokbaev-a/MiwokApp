@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class WordAdaptor extends ArrayAdapter<Word> {
+public class WordAdapter extends ArrayAdapter<Word> {
 
     private MediaPlayer mediaPlayer;
     Activity contextActivity;
@@ -33,7 +33,7 @@ public class WordAdaptor extends ArrayAdapter<Word> {
         }
     };
 
-    public WordAdaptor(Activity context, ArrayList<Word> words) {
+    public WordAdapter(Activity context, ArrayList<Word> words) {
         super(context, 0, words);
         contextActivity = context;
     }

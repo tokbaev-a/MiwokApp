@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class FamilyActivity extends AppCompatActivity {
     int numberListSize = 10;
-    WordAdaptor itemsAdapter;
+    WordAdapter itemsAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,7 @@ public class FamilyActivity extends AppCompatActivity {
 
         wordsList = populateData(wordsList);
 
-        itemsAdapter = new WordAdaptor(this, wordsList);
+        itemsAdapter = new WordAdapter(this, wordsList);
         ListView listView = (ListView) findViewById(R.id.rootViewFamMem);
 
         listView.setAdapter(itemsAdapter);

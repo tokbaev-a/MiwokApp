@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class NumbersActivity extends AppCompatActivity {
     int numberListSize = 11;
-    WordAdaptor itemsAdapter;
+    WordAdapter itemsAdapter;
 
 
     @Override
@@ -27,7 +27,7 @@ public class NumbersActivity extends AppCompatActivity {
             Log.v("NumbersActivity", wordsList.get(5).englishWord + "-----------ppppp-----------");
         }
 
-        itemsAdapter = new WordAdaptor(this, wordsList);
+        itemsAdapter = new WordAdapter(this, wordsList);
         ListView listView = (ListView) findViewById(R.id.rootView);
         listView.setAdapter(itemsAdapter);
     }
